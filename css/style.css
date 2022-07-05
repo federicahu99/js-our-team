@@ -3,7 +3,37 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    background-color: lightskyblue;
+    color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* general */
+span {
+    display: block;
+}
+
+li {
+    list-style-type: none;
+    text-shadow: 1px 1px grey;
+    font-size: 20px;
+}
+
+h1 {
+    text-shadow: 2px 2px grey;
+    margin: 20px 0;
+    text-align: center;
+    font-size: 50px;
+}
+
 /* body */
+
+#container {
+    height: 90vh;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.position {
+    text-shadow: 1px 1px grey;
+}

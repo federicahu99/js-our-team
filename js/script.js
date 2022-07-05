@@ -67,7 +67,7 @@ for ( i = 0 ; i < teamMembers.length; i++) {
     // prendo elementi dal DOM
     const container = document.getElementById('container');
     let team = '<ul>';
-    team += `<li>${teamMembers[i]['name']} <br> ${teamMembers[i]['position']} <br> ${teamMembers[i]['photo']} </li>`;
+    team += `<li>${teamMembers[i]['name']} <span class="position"> ${teamMembers[i]['position']} <span class="photo"> ${teamMembers[i]['photo']} </li>`;
     team += '</ul>';
     container.innerHTML= team;
     //stampo in console
