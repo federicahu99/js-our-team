@@ -17,17 +17,13 @@
     2- inserisco nomi, ruoli e foto e le stampo su console.
     3- porto in DOM 
     4- stile
-*/
 
-
-/*
-Wayne Barnett |	Founder & CEO        |	wayne-barnett-founder-ceo.jpg
-Angela Caroll |	Chief Editor         |	angela-caroll-chief-editor.jpg
-Walter Gordon |	Office Manager       |	walter-gordon-office-manager.jpg
-Angela Lopez  |	Social Media Manager |	angela-lopez-social-media-manager.jpg
-Scott Estrada |	Developer            |	scott-estrada-developer.jpg
-Barbara Ramos |	Graphic Designer     |	barbara-ramos-graphic-designer.jpg 
-
+    Wayne Barnett |	Founder & CEO        |	wayne-barnett-founder-ceo.jpg
+    Angela Caroll |	Chief Editor         |	angela-caroll-chief-editor.jpg
+    Walter Gordon |	Office Manager       |	walter-gordon-office-manager.jpg
+    Angela Lopez  |	Social Media Manager |	angela-lopez-social-media-manager.jpg
+    Scott Estrada |	Developer            |	scott-estrada-developer.jpg
+    Barbara Ramos |	Graphic Designer     |	barbara-ramos-graphic-designer.jpg 
 */
 
 // creo array
@@ -65,3 +61,11 @@ const teamMembers=
 }
 
 ]
+
+// stampo in console
+for ( i = 0 ; i < teamMembers.length; i++) {
+    console.log('__________________________________________________')
+    console.log(teamMembers[i]['name'])
+    console.log(teamMembers[i]['position'])
+    console.log(teamMembers[i]['photo'])
+}
