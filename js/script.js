@@ -59,13 +59,21 @@ const teamMembers=
     position: 'Graphic Designer',
     photo: 'barbara-ramos-graphic-designer.jpg'
 }
-
 ]
 
 // stampo in console
 for ( i = 0 ; i < teamMembers.length; i++) {
+    // stampo in DOM
+    // prendo elementi dal DOM
+    const container = document.getElementById('container');
+    let team = '<ul>';
+    team += `<li>${teamMembers[i]['name']} <br> ${teamMembers[i]['position']} <br> ${teamMembers[i]['photo']} </li>`;
+    team += '</ul>';
+    container.innerHTML= team;
+    //stampo in console
     console.log('__________________________________________________')
     console.log(teamMembers[i]['name'])
     console.log(teamMembers[i]['position'])
     console.log(teamMembers[i]['photo'])
 }
+
