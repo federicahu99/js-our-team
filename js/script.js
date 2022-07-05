@@ -17,13 +17,6 @@
     2- inserisco nomi, ruoli e foto e le stampo su console.
     3- porto in DOM 
     4- stile
-
-    Wayne Barnett |	Founder & CEO        |	wayne-barnett-founder-ceo.jpg
-    Angela Caroll |	Chief Editor         |	angela-caroll-chief-editor.jpg
-    Walter Gordon |	Office Manager       |	walter-gordon-office-manager.jpg
-    Angela Lopez  |	Social Media Manager |	angela-lopez-social-media-manager.jpg
-    Scott Estrada |	Developer            |	scott-estrada-developer.jpg
-    Barbara Ramos |	Graphic Designer     |	barbara-ramos-graphic-designer.jpg 
 */
 
 // creo array
@@ -66,14 +59,18 @@ for ( i = 0 ; i < teamMembers.length; i++) {
     // stampo in DOM
     // prendo elementi dal DOM
     const container = document.getElementById('container');
+    // creo stringa
     let team = '<ul>';
-    team += `<li>${teamMembers[i]['name']} <span class="position"> ${teamMembers[i]['position']} <span class="photo"> ${teamMembers[i]['photo']} </li>`;
+    team += `<li>${teamMembers[i]['name']} <span class="position"> ${teamMembers[i]['position']}</span> </li>`;
     team += '</ul>';
-    container.innerHTML= team;
+    team += `<img src="img/${teamMembers[i]['photo']}" alt="member${[i]}>`;
+    container.innerHTML += team;
     //stampo in console
     console.log('__________________________________________________')
     console.log(teamMembers[i]['name'])
     console.log(teamMembers[i]['position'])
     console.log(teamMembers[i]['photo'])
+   
 }
+
 
