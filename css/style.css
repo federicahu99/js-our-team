@@ -13,18 +13,17 @@ span {
     display: block;
 }
 
-li {
-    list-style-type: none;
-    text-shadow: 1px 1px grey;
-    font-size: 20px;
-}
-
 h1 {
     text-shadow: 2px 2px grey;
     margin: 20px 0;
     text-align: center;
     font-size: 50px;
 }
+
+img{
+    width: 100%;
+}
+
 
 /* body */
 
@@ -36,4 +35,17 @@ h1 {
 
 .position {
     text-shadow: 1px 1px grey;
+}
+
+.card {
+    text-align: center;
+    display: inline-block;
+    width: 32%;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.names {
+    font-size: 25px;
+    font-weight: bold;
 }

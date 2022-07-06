@@ -60,10 +60,13 @@ for ( i = 0 ; i < teamMembers.length; i++) {
     // prendo elementi dal DOM
     const container = document.getElementById('container');
     // creo stringa
-    let team = '<ul>';
-    team += `<li>${teamMembers[i]['name']} <span class="position"> ${teamMembers[i]['position']}</span> </li>`;
-    team += '</ul>';
-    team += `<img src="img/${teamMembers[i]['photo']}" alt="member${[i]}>`;
+    let team = `
+    <div class="card">
+        <img src="img/${teamMembers[i]['photo']}" alt="member${[i]}">
+        <div class="names"> ${teamMembers[i]['name']} 
+            <span class="position"> ${teamMembers[i]['position']}</span> 
+        </div>
+    </div>`;
     container.innerHTML += team;
     //stampo in console
     console.log('__________________________________________________')
